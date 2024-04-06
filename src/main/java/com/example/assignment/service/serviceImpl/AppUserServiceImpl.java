@@ -1,14 +1,16 @@
-package com.example.assignment.service;
+package com.example.assignment.service.serviceImpl;
 
 import com.example.assignment.dto.AppUserDto;
 import com.example.assignment.dto.RequestResponseMapper;
 import com.example.assignment.model.AppUser;
 import com.example.assignment.repo.AppUserRepo;
+import com.example.assignment.service.AppUserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -37,4 +39,11 @@ public class AppUserServiceImpl implements AppUserService {
         appUserRepo.save(appUser);
         return "User saved Successfully";
     }
+
+    @Override
+    public List<String> seeFacility() {
+        return Arrays.asList("Free Food","Competitive Salary","Dashain Bonus");
+    }
+
+
 }

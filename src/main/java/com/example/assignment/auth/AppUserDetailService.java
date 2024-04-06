@@ -1,4 +1,4 @@
-package com.example.assignment.service;
+package com.example.assignment.auth;
 
 import com.example.assignment.config.AppUserInfoDetails;
 import com.example.assignment.model.AppUser;

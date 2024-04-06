@@ -1,0 +1,9 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 64011510224-r67j4b2jthg1682sljetsjt6aq9jsm58.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: http://localhost:8080/login/oauth2/code/google

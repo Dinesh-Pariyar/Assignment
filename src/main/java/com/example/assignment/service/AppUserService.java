@@ -12,6 +12,7 @@ public interface AppUserService {
     public AppUserDto getUserByUsername(String username);
 
     public  String saveUser(AppUser user);
+    public List<String > seeFacility();
 
 
 }
